@@ -1,11 +1,18 @@
 {
-  "bin": "cd spa-routing-react",
-  "name": "npm install react-router-dom",
-  "author": "1",
-  "description": "1",
+  "name": "sabanamarket-backend",
   "version": "1.0.0",
-  "license": "UNLICENCED",
+  "description": "Backend de Sabanamarket",
+  "main": "backend/index.js",
+  "scripts": {
+    "start": "node backend/index.js",
+    "dev": "nodemon backend/index.js"
+  },
   "dependencies": {
-    "react-router-dom": "^7.14.2"
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.0",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.0"
   }
 }
