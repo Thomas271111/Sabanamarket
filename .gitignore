@@ -1,0 +1,26 @@
+# .gitignore
+# =============================================
+# Archivos que NO deben subirse a GitHub
+# =============================================
+
+# Variables de entorno — NUNCA subas esto
+.env
+.env.local
+.env.production
+
+# Dependencias — se instalan con npm install
+node_modules/
+frontend/node_modules/
+backend/node_modules/
+
+# Archivos de build generados automáticamente
+frontend/dist/
+frontend/.vite/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Sistema operativo
+.DS_Store
+Thumbs.db

@@ -1,0 +1,29 @@
+# render.yaml
+# =============================================
+# Configuración de despliegue en Render
+# Este archivo le dice a Render cómo arrancar
+# tu backend de Node.js automáticamente
+# =============================================
+
+services:
+  - type: web
+    name: sabanamarket-api
+    runtime: node
+    rootDir: backend          # Carpeta del backend dentro del repo
+    buildCommand: npm install # Instala las dependencias
+    startCommand: npm start   # Arranca el servidor (node src/index.js)
+    envVars:
+      - key: PORT
+        value: 3001
+      - key: JWT_SECRET
+        sync: false           # Lo escribes manualmente en el dashboard de Render
+      - key: DB_HOST
+        sync: false           # Lo copias desde Supabase
+      - key: DB_PORT
+        value: 5432
+      - key: DB_NAME
+        sync: false
+      - key: DB_USER
+        sync: false
+      - key: DB_PASSWORD
+        sync: false
