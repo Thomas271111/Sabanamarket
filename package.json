@@ -1,0 +1,11 @@
+{
+  "bin": "cd spa-routing-react",
+  "name": "npm install react-router-dom",
+  "author": "1",
+  "description": "1",
+  "version": "1.0.0",
+  "license": "UNLICENCED",
+  "dependencies": {
+    "react-router-dom": "^7.14.2"
+  }
+}
